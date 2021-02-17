@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 
 pixela_endpoint = "https://pixe.la/v1/users"
-USERNAME = "lilcolgate01"
+USERNAME = os.environ.get("USERNAME")
 
 user_params = {
     "token": os.environ.get("TOKEN"),
